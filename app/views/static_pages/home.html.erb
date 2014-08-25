@@ -1,2 +1,12 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, 'Home') %>
+<div class="center hero-unit">
+  <h1>Bienvenue sur Cavio</h1>
+
+  <h2>
+   Sur ce site, vous allez gérer votre cave à vin en ligne
+  </h2>
+
+  <%= link_to "S'inscrire maintenant !", '#', class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
